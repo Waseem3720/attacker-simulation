@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attacker Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Attacker Simulation Dashboard</h1>
+    <p>Explore motives, tactics, targets, and impacts of different attacker types.</p>
+</header>
+
+<!-- Tab Menu -->
+<div class="tab-menu">
+    <button class="tab-btn active" data-target="hacktivist">Hacktivist</button>
+    <button class="tab-btn" data-target="cybercriminal">Cybercriminal</button>
+    <button class="tab-btn" data-target="insider">Insider Threat</button>
+    <button class="tab-btn" data-target="scriptkiddie">Script Kiddie</button>
+    <button class="tab-btn" data-target="nationstate">Nation-State</button>
+    <button class="tab-btn" data-target="terrorist">Cyber Terrorist</button>
+</div>
+
+<!-- Tab Content -->
+<div class="tab-content">
+
+    <!-- Hacktivist -->
+    <section id="hacktivist" class="tab-panel active">
+        <h2>Hacktivist</h2>
+        <p><strong>Motive:</strong> Political or social change</p>
+        <p><strong>Tactics:</strong> Website defacement, DDoS, leaks</p>
+        <p><strong>Target:</strong> Corporations, governments</p>
+        <p><strong>Impact:</strong> Public awareness, minor financial loss</p>
+
+        <h3>Artifacts</h3>
+        <ul>
+            <li>Mock protest banner image</li>
+            <li>Fake manifesto text</li>
+            <li>Sample defaced webpage screenshot</li>
+        </ul>
+
+        <h3>Timeline</h3>
+        <ol>
+            <li>Recon: Identify target vulnerabilities</li>
+            <li>Delivery/Access: Deploy defacement or leaks</li>
+            <li>Actions/Impact: Public message displayed</li>
+        </ol>
+
+        <h3>Defender Countermeasures</h3>
+        <ul>
+            <li>Web application firewall</li>
+            <li>Regular patching</li>
+            <li>Monitor for suspicious activity</li>
+        </ul>
+    </section>
+
+    <!-- Cybercriminal -->
+    <section id="cybercriminal" class="tab-panel">
+        <h2>Cybercriminal</h2>
+        <p><strong>Motive:</strong> Financial gain</p>
+        <p><strong>Tactics:</strong> Ransomware, phishing, card skimming</p>
+        <p><strong>Target:</strong> Businesses, banks, individuals</p>
+        <p><strong>Impact:</strong> Financial loss, stolen data</p>
+
+        <h3>Artifacts</h3>
+        <ul>
+            <li>Fake ransom note mockup</li>
+            <li>Phishing email screenshot</li>
+            <li>Brag card image</li>
+        </ul>
+
+        <h3>Timeline</h3>
+        <ol>
+            <li>Recon: Identify vulnerable systems</li>
+            <li>Delivery/Access: Deploy ransomware or phishing</li>
+            <li>Actions/Impact: Encrypt files, demand payment</li>
+        </ol>
+
+        <h3>Defender Countermeasures</h3>
+        <ul>
+            <li>Backup critical data</li>
+            <li>Email filtering & awareness training</li>
+            <li>Endpoint protection software</li>
+        </ul>
+    </section>
+
+    <!-- Insider Threat -->
+    <section id="insider" class="tab-panel">
+        <h2>Insider Threat</h2>
+        <p><strong>Motive:</strong> Revenge, greed, or sabotage</p>
+        <p><strong>Tactics:</strong> Unauthorized access, data leaks</p>
+        <p><strong>Target:</strong> Employer, coworkers</p>
+        <p><strong>Impact:</strong> Loss of sensitive data, operational disruption</p>
+
+        <h3>Artifacts</h3>
+        <ul>
+            <li>Fake internal email leak</li>
+            <li>Access log snippet</li>
+            <li>Unauthorized file export mockup</li>
+        </ul>
+
+        <h3>Timeline</h3>
+        <ol>
+            <li>Recon: Identify internal data of interest</li>
+            <li>Delivery/Access: Use legitimate access to extract data</li>
+            <li>Actions/Impact: Leak or misuse sensitive info</li>
+        </ol>
+
+        <h3>Defender Countermeasures</h3>
+        <ul>
+            <li>Strict access controls</li>
+            <li>User activity monitoring</li>
+            <li>Data loss prevention tools</li>
+        </ul>
+    </section>
+
+    <!-- Script Kiddie -->
+    <section id="scriptkiddie" class="tab-panel">
+        <h2>Script Kiddie</h2>
+        <p><strong>Motive:</strong> Curiosity, fun, or bragging</p>
+        <p><strong>Tactics:</strong> Use pre-made tools, exploits</p>
+        <p><strong>Target:</strong> Random websites or games</p>
+        <p><strong>Impact:</strong> Minor disruption, embarrassment</p>
+
+        <h3>Artifacts</h3>
+        <ul>
+            <li>Screenshot of hacking tool interface</li>
+            <li>Sample DDoS attempt log</li>
+            <li>Forum brag post mockup</li>
+        </ul>
+
+        <h3>Timeline</h3>
+        <ol>
+            <li>Recon: Find random vulnerable sites</li>
+            <li>Delivery/Access: Run pre-made exploit scripts</li>
+            <li>Actions/Impact: Temporary site defacement or downtime</li>
+        </ol>
+
+        <h3>Defender Countermeasures</h3>
+        <ul>
+            <li>Strong passwords & MFA</li>
+            <li>Update software regularly</li>
+            <li>Web monitoring</li>
+        </ul>
+    </section>
+
+    <!-- Nation-State -->
+    <section id="nationstate" class="tab-panel">
+        <h2>Nation-State Actor</h2>
+        <p><strong>Motive:</strong> Political or economic advantage</p>
+        <p><strong>Tactics:</strong> Advanced persistent threats, espionage</p>
+        <p><strong>Target:</strong> Governments, corporations</p>
+        <p><strong>Impact:</strong> Strategic data theft, long-term espionage</p>
+
+        <h3>Artifacts</h3>
+        <ul>
+            <li>APT attack timeline mockup</li>
+            <li>Phishing email screenshot</li>
+            <li>Exfiltration log snippet</li>
+        </ul>
+
+        <h3>Timeline</h3>
+        <ol>
+            <li>Recon: Identify strategic targets</li>
+            <li>Delivery/Access: Deploy malware, gain stealth access</li>
+            <li>Actions/Impact: Extract sensitive data over time</li>
+        </ol>
+
+        <h3>Defender Countermeasures</h3>
+        <ul>
+            <li>Network segmentation</li>
+            <li>Threat intelligence & monitoring</li>
+            <li>Regular security audits</li>
+        </ul>
+    </section>
+
+    <!-- Cyber Terrorist -->
+    <section id="terrorist" class="tab-panel">
+        <h2>Cyber Terrorist</h2>
+        <p><strong>Motive:</strong> Create fear or political instability</p>
+        <p><strong>Tactics:</strong> Disruption of critical infrastructure</p>
+        <p><strong>Target:</strong> Power grids, transport, healthcare</p>
+        <p><strong>Impact:</strong> Large-scale fear, potential physical harm</p>
+
+        <h3>Artifacts</h3>
+        <ul>
+            <li>Mock propaganda message</li>
+            <li>Simulation of critical system disruption</li>
+            <li>Threat notice screenshot</li>
+        </ul>
+
+        <h3>Timeline</h3>
+        <ol>
+            <li>Recon: Identify critical infrastructure vulnerabilities</li>
+            <li>Delivery/Access: Deploy attack simulations</li>
+            <li>Actions/Impact: Demonstrate potential disruption</li>
+        </ol>
+
+        <h3>Defender Countermeasures</h3>
+        <ul>
+            <li>Critical system monitoring</li>
+            <li>Incident response planning</li>
+            <li>Redundant safety systems</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>Fictional simulation for educational purposes only.</p>
+</footer>
+
+<script>
+    const buttons = document.querySelectorAll(".tab-btn");
+    const panels = document.querySelectorAll(".tab-panel");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            buttons.forEach(b => b.classList.remove("active"));
+            panels.forEach(p => p.classList.remove("active"));
+
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.target).classList.add("active");
+        });
+    });
+</script>
+
+</body>
+</html>
